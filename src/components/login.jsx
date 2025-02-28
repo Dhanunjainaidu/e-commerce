@@ -29,7 +29,7 @@ const Login = () => {
       const response = await axios.post(
         `${backendurl}/login`,
         {
-          username: email,
+          email: email,
           password: password,
         },
         {
@@ -158,7 +158,7 @@ const Login = () => {
             </h2>
             {tab==='login'?
             <form onSubmit={handleLoginSubmit} className="mb-4 p-1">
-              <div className="mb-4 position-relative d-flex align-items-center">
+              <div className="mb-4 mt-4 position-relative d-flex align-items-center">
               <span
             
                     className="input-group-icon"
@@ -183,7 +183,7 @@ const Login = () => {
                   />
                 </div>
               </div>
-              <div className="mb-3 position-relative d-flex">
+              <div className="mb-4 mt-4 position-relative d-flex">
               <span
              
                     className="input-group-icon"
